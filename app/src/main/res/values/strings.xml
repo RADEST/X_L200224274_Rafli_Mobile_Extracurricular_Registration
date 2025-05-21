@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Extracurricular Registration</string>
+
+    <!-- Hint untuk input -->
+    <string name="hint_nama">Nama</string>
+    <string name="hint_nis">NIS</string>
+    <string name="hint_hari_jam">Hari dan Jam</string>
+
+    <!-- Label jenis kelamin -->
+    <string name="label_l">L</string>
+    <string name="label_p">P</string>
+
+    <!-- Nama ekstrakurikuler -->
+    <string name="ekstra_1">Ekstra 1</string>
+    <string name="ekstra_2">Ekstra 2</string>
+
+    <!-- Tombol -->
+    <string name="button_batal">Batal</string>
+    <string name="button_simpan">Simpan</string>
+    <string name="button_kembali">Kembali</string>
+
+    <!-- Judul hasil -->
+    <string name="title_result">Hasil Pendaftaran Ekstrakurikuler</string>
+
+    <!-- Label hasil dengan placeholder yang benar -->
+    <string name="label_nama">Nama: %1$s</string>
+    <string name="label_nis">NIS: %1$s</string>
+    <string name="label_kelas">Kelas: %1$s</string>
+    <string name="label_hari_jam">Hari dan Jam: %1$s</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kelas_array">
+        <item>Pilih Kelas</item>
+        <item>X IPA 1</item>
+        <item>X IPA 2</item>
+        <item>X IPS 1</item>
+    </string-array>
+</resources>

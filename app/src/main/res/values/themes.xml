@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema turunan dari Theme.AppCompat -->
+    <style name="Theme.ExtracurricularRegistration" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Warna atau konfigurasi lain bisa ditambahkan di sini -->
+    </style>
+</resources>

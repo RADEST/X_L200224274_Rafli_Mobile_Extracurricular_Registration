@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_result"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:paddingBottom="24dp" />
+
+    <!-- Informasi Nama -->
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_nama"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:paddingBottom="12dp" />
+
+    <!-- Informasi NIS -->
+    <TextView
+        android:id="@+id/tvNIS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_nis"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:paddingBottom="12dp" />
+
+    <!-- Informasi Kelas -->
+    <TextView
+        android:id="@+id/tvKelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_kelas"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:paddingBottom="12dp" />
+
+    <!-- Informasi Hari dan Jam -->
+    <TextView
+        android:id="@+id/tvHariJam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_hari_jam"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:paddingBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_kembali"
+        android:backgroundTint="#03A9F4"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="24dp" />
+</LinearLayout>

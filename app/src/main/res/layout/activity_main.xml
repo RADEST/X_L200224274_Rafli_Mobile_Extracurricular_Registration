@@ -1,0 +1,401 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003366">
+
+    <!-- Header tetap di atas -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pendaftaran Ekstrakurikuler"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#003366"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMA Muhammadiyah"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="0dp" />
+    </LinearLayout>
+
+    <!-- ScrollView di bawah header -->
+    <ScrollView
+        android:id="@+id/scrollForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:fillViewport="true"
+        android:padding="16dp"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:padding="16dp">
+
+            <!-- Form tetap sama -->
+            <!-- Nama -->
+            <EditText
+                android:id="@+id/etNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_nama"
+                android:inputType="textPersonName"
+                android:autofillHints="name"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:backgroundTint="#003366"
+                android:layout_marginBottom="8dp" />
+
+            <!-- NIS -->
+            <EditText
+                android:id="@+id/etNIS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_nis"
+                android:inputType="number"
+                android:autofillHints="username"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:backgroundTint="#003366"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Spinner -->
+            <Spinner
+                android:id="@+id/spinnerKelas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Date Picker -->
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="268dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Radio Group -->
+            <RadioGroup
+                android:id="@+id/rgJenisKelamin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <RadioButton
+                    android:id="@+id/rbL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_l"
+                    android:minHeight="48dp"
+                    android:minWidth="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <RadioButton
+                    android:id="@+id/rbP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_p"
+                    android:minHeight="48dp"
+                    android:minWidth="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+            </RadioGroup>
+
+            <!-- TextView untuk heading ekstrakurikuler -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pilih Ekstrakurikuler:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#003366"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- GRID LAYOUT untuk Checkboxes Ekstrakurikuler dalam 2 kolom -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <!-- Baris 1 -->
+                <CheckBox
+                    android:id="@+id/cbSepakBola"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Sepak Bola"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <CheckBox
+                    android:id="@+id/cbBasket"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Basket"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <!-- Baris 2 -->
+                <CheckBox
+                    android:id="@+id/cbArchery"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Archery"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <CheckBox
+                    android:id="@+id/cbVolly"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Volly"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <!-- Baris 3 -->
+                <CheckBox
+                    android:id="@+id/cbRenang"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Renang"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <CheckBox
+                    android:id="@+id/cbFutsal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Futsal"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <!-- Baris 4 -->
+                <CheckBox
+                    android:id="@+id/cbTenis"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Tenis Meja"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <CheckBox
+                    android:id="@+id/cbPencakSilat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Pencak Silat"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <!-- Baris 5 -->
+                <CheckBox
+                    android:id="@+id/cbMarchingBand"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Marching Band"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <CheckBox
+                    android:id="@+id/cbPramuka"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Pramuka"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <!-- Baris 6 -->
+                <CheckBox
+                    android:id="@+id/cbTeater"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Teater"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <CheckBox
+                    android:id="@+id/cbMusik"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Musik"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <!-- Baris 7 -->
+                <CheckBox
+                    android:id="@+id/cbFotografi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Fotografi"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <CheckBox
+                    android:id="@+id/cbRobotik"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Robotik"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <!-- Baris 8 -->
+                <CheckBox
+                    android:id="@+id/cbEnglishClub"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="English Club"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <CheckBox
+                    android:id="@+id/cbKaryaIlmiah"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Karya Ilmiah"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <!-- Baris 9 -->
+                <CheckBox
+                    android:id="@+id/cbDebat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Debat"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <CheckBox
+                    android:id="@+id/cbDance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Dance"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <!-- Baris 10 -->
+                <CheckBox
+                    android:id="@+id/cbKaligrafi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Kaligrafi"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+
+                <CheckBox
+                    android:id="@+id/cbTariTradisional"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Tari Tradisional"
+                    android:minHeight="48dp"
+                    android:padding="8dp"
+                    android:textColor="#003366" />
+            </GridLayout>
+
+            <!-- Hari Jam -->
+            <EditText
+                android:id="@+id/etHariJam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_hari_jam"
+                android:inputType="text"
+                android:autofillHints="text"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:backgroundTint="#003366"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Tombol -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <Button
+                    android:id="@+id/btnBatal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_batal"
+                    android:backgroundTint="#FFD700"
+                    android:textColor="#000000"
+                    android:minHeight="48dp"
+                    android:minWidth="48dp"
+                    android:layout_marginEnd="16dp" />
+
+                <Button
+                    android:id="@+id/btnSimpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_simpan"
+                    android:backgroundTint="#003366"
+                    android:textColor="#FFFFFF"
+                    android:minHeight="48dp"
+                    android:minWidth="48dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
