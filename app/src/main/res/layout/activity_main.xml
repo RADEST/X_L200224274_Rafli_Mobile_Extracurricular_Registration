@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#003366">
@@ -352,17 +353,95 @@
                     android:textColor="#003366" />
             </GridLayout>
 
-            <!-- Hari Jam -->
-            <EditText
-                android:id="@+id/etHariJam"
+            <!-- Hari Jam menggunakan Spinner dan TextClock -->
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/hint_hari_jam"
-                android:inputType="text"
-                android:autofillHints="text"
+                android:text="Pilih Hari dan Jam:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#003366"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Spinner untuk pilihan hari -->
+            <Spinner
+                android:id="@+id/spinnerHari"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:minHeight="48dp"
                 android:padding="8dp"
-                android:backgroundTint="#003366"
+                android:background="@drawable/search_background"
+                android:layout_marginBottom="8dp" />
+
+            <!-- LinearLayout untuk memilih jam mulai dan selesai -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <!-- Jam Mulai -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mulai"
+                        android:textSize="14sp"
+                        android:textColor="#003366"
+                        android:layout_marginBottom="4dp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerJamMulai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:background="@drawable/search_background"
+                        android:padding="8dp" />
+                </LinearLayout>
+
+                <!-- Jam Selesai -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selesai"
+                        android:textSize="14sp"
+                        android:textColor="#003366"
+                        android:layout_marginBottom="4dp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerJamSelesai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:background="@drawable/search_background"
+                        android:padding="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- TextView untuk menampilkan pilihan waktu lengkap -->
+            <TextView
+                android:id="@+id/tvWaktuLengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hari dan Waktu: -"
+                android:textSize="14sp"
+                android:textColor="#003366"
+                android:padding="8dp"
+                android:background="@drawable/search_background"
                 android:layout_marginBottom="16dp" />
 
             <!-- Tombol -->

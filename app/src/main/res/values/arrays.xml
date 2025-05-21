@@ -2,8 +2,14 @@
 <resources>
     <string-array name="kelas_array">
         <item>Pilih Kelas</item>
-        <item>X IPA 1</item>
-        <item>X IPA 2</item>
-        <item>X IPS 1</item>
+        <item>X-A</item>
+        <item>X-B</item>
+        <item>X-C</item>
+        <item>XI-A</item>
+        <item>XI-B</item>
+        <item>XI-C</item>
+        <item>XII-A</item>
+        <item>XII-B</item>
+        <item>XII-C</item>
     </string-array>
 </resources>

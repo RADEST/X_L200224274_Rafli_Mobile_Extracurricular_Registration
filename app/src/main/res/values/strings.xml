@@ -7,12 +7,8 @@
     <string name="hint_hari_jam">Hari dan Jam</string>
 
     <!-- Label jenis kelamin -->
-    <string name="label_l">L</string>
-    <string name="label_p">P</string>
-
-    <!-- Nama ekstrakurikuler -->
-    <string name="ekstra_1">Ekstra 1</string>
-    <string name="ekstra_2">Ekstra 2</string>
+    <string name="label_l">Laki-Laki</string>
+    <string name="label_p">Perempuan</string>
 
     <!-- Tombol -->
     <string name="button_batal">Batal</string>
